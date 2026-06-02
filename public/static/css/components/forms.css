@@ -1,0 +1,170 @@
+.form-stack {
+  display: grid;
+  gap: var(--space-7);
+  max-width: 100%;
+}
+
+.form-stack.inline-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  justify-content: center;
+}
+
+.form-stack.inline-actions :where(button, .button) {
+  width: auto;
+}
+
+.search-form {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  max-width: 100%;
+}
+
+.search-form input {
+  flex: 1 1 12rem;
+  min-width: 0;
+}
+
+.search-form button {
+  flex: 0 0 auto;
+}
+
+.form-message {
+  align-items: flex-start;
+  background: var(--surface-background-soft);
+  border: var(--border-thin) solid var(--surface-border-soft);
+  border-radius: var(--radius-panel);
+  color: var(--color-text);
+  display: flex;
+  gap: var(--space-4);
+  margin: 0;
+  max-width: 100%;
+  padding: var(--space-4) var(--space-5);
+  text-align: left;
+}
+
+.form-stack > .form-message,
+.composer > .form-message {
+  margin: 0;
+}
+
+.form-error {
+  background: var(--color-danger-soft);
+  border-color: var(--color-danger-border);
+  color: var(--color-danger-text);
+}
+
+.form-success {
+  background: var(--color-success-soft);
+  border-color: var(--color-success-border);
+  color: var(--color-success-text);
+}
+
+.form-message--error::before,
+.form-message--success::before {
+  flex: 0 0 auto;
+  font-weight: bold;
+  line-height: var(--line-height-body);
+}
+
+.form-message--error,
+.form-message--success {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-message--error::before {
+  color: var(--color-danger);
+  content: "\00d7";
+}
+
+.form-message--success::before {
+  color: var(--color-success-text);
+  content: "\2713";
+}
+
+.raid-banner::before {
+  content: none;
+}
+
+.raid-banner {
+  display: block;
+  text-align: center;
+}
+
+.raid-banner .icon {
+  color: var(--color-danger);
+  display: inline-flex;
+  margin-inline-end: var(--icon-label-gap);
+}
+
+.raid-banner > span:not(.icon) {
+  display: inline;
+}
+
+.form-field {
+  display: grid;
+  gap: var(--space-3);
+  max-width: 100%;
+}
+
+.form-field__label {
+  font-weight: bold;
+}
+
+.form-field__label-link {
+  font-size: var(--font-size-small);
+  font-weight: normal;
+  margin-inline-start: var(--space-4);
+}
+
+.form-field__hint,
+.form-actions__hint {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+}
+
+.form-field > :where(input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="image"]), textarea, select) {
+  width: 100%;
+}
+
+.form-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.form-actions__hint {
+  align-items: center;
+  display: inline-flex;
+  min-height: var(--control-min-height);
+}
+
+.form-options {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.form-checks {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.form-checks label {
+  align-items: center;
+  display: inline-flex;
+  gap: var(--space-3);
+}
+
+.character-limit-hint {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-caption);
+  font-style: italic;
+  line-height: var(--line-height-body);
+}

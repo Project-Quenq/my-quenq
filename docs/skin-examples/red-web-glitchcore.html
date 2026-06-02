@@ -1,0 +1,235 @@
+<!--
+Original SpaceHey layout credit:
+sybilz layouts
+https://layouts.spacehey.com/layout?id=23505
+-->
+
+<div class="skin-decoration skin-decoration--red-web">
+  <img src="https://64.media.tumblr.com/4b224a9a145ed362e5dd61c27c5d243d/9767703b546d4cc3-26/s500x750/1a207d3b16765d65e423734ff14bdc519964dc96.gifv" alt="" loading="lazy">
+  <img src="https://64.media.tumblr.com/6c47f64528ef7d64ca593b7623009328/3d23c3979b767a92-48/s500x750/43bb4f0d29eba76f085fc5ac77181e46c78f99af.gifv" alt="" loading="lazy">
+  <img src="https://64.media.tumblr.com/6f7c4e869b8d39b73a2200a33506630d/8c6c9c67e7bd719d-e9/s400x600/dfb892f65b4f100408eb8cbe76a74d428d3e5631.gifv" alt="" loading="lazy">
+  <img src="https://i.imgur.com/3bkohfc.png" alt="" loading="lazy">
+  <img src="https://i.imgur.com/4R6N5o9.png" alt="" loading="lazy">
+  <img src="https://64.media.tumblr.com/6cbf50d286f93d4b96856ba92dd77981/0029a9e9ab07cc70-9f/s250x400/4a0860b62ec1b04ad05b0992b722741a90636385.gifv" alt="" loading="lazy">
+  <img src="https://64.media.tumblr.com/9514fdd886461875fe2f87dee8fa3adf/7c737a4fb030b56b-8d/s75x75_c1/c81eaeebef1cb9b98afdb09bcacfc67d4d98ac37.gifv" alt="" loading="lazy">
+  <img src="https://64.media.tumblr.com/897c81c7be197898e44332b786946c0d/4d9ab15404ddfee1-cd/s75x75_c1/3f17315502213543bc2f847738eb65c5960973cb.gifv" alt="" loading="lazy">
+</div>
+
+<style>
+@keyframes float {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(0, 8px); }
+  100% { transform: translate(0, 0); }
+}
+
+[data-skin-page] {
+  --skin-palette-accent: #bc1419;
+  --skin-palette-accent-text: #000000;
+  --skin-palette-backdrop: #1a0000;
+  --skin-palette-chrome: #000000;
+  --skin-palette-chrome-text: #af3838;
+  --skin-palette-link: #648998;
+  --skin-palette-link-hover: #ff7777;
+  --skin-palette-muted: #72878c;
+  --skin-palette-page: rgba(0,0,0,0.49);
+  --skin-palette-page-text: #ff6868;
+  --skin-palette-surface: rgba(0,0,0,0.22);
+  --skin-palette-surface-text: #72878c;
+  background:
+    linear-gradient(rgba(82,15,15,0.48) 50%, rgba(0,0,0,0) 50%),
+    url("https://i.pinimg.com/originals/b7/9a/f5/b79af5850ce890e052487cc88ab91251.gif");
+  background-size: 100% 2px, auto;
+  cursor: url("https://64.media.tumblr.com/d4a50c1b4d90a1eccf75ccca47199961/b261dfe74ba3f797-4e/s250x250_c1/b8ad33e140c516f3c0960a2572806ef066ef50d0.gifv") 31 31, auto;
+}
+
+[data-skin-root],
+[data-skin-root] * {
+  cursor: url("https://64.media.tumblr.com/d4a50c1b4d90a1eccf75ccca47199961/b261dfe74ba3f797-4e/s250x250_c1/b8ad33e140c516f3c0960a2572806ef066ef50d0.gifv") 31 31, auto;
+  font-family: monospace;
+}
+
+[data-skin-root] {
+  animation: float 3s infinite ease-in-out;
+  background: rgba(0,0,0,0.18);
+  border: 3px solid #bc1419;
+  color: #ff6868;
+}
+
+[data-skin-part="shell"] {
+  background:
+    linear-gradient(rgba(0,0,0,0.24), rgba(0,0,0,0.24)),
+    url("https://i.pinimg.com/originals/b7/9a/f5/b79af5850ce890e052487cc88ab91251.gif") center / auto repeat !important;
+}
+
+[data-skin-part="content"] {
+  background: rgba(0,0,0,0.16) !important;
+}
+
+[data-skin-part="navigation-top"] {
+  background: url("https://i.pinimg.com/originals/82/cb/ec/82cbecb96f2cc2330b20867cbda1b4f5.gif") center / cover !important;
+}
+
+[data-skin-part="navigation-links"] {
+  background: #000 !important;
+}
+
+[data-skin-part="navigation-links"] a {
+  color: #af3838;
+}
+
+[data-skin-part="name"] {
+  color: #ff7777;
+  font-family: fangsong, serif;
+  font-size: 2.5em !important;
+  text-shadow: 2px 2px 0.5px #ff0000;
+}
+
+[data-skin-part="name"]::after {
+  background: url("https://64.media.tumblr.com/bf47d42e5ae52f4c49497e3782ca9c12/005dbf061fabc0c8-6d/s250x250_c1/8807bd70d376c90b1309c6464833e9eb0fa6d238.gifv") center / contain no-repeat;
+  content: "";
+  display: inline-block;
+  height: 28px;
+  margin-left: 8px;
+  vertical-align: middle;
+  width: 28px;
+}
+
+[data-skin-root] a {
+  color: #648998;
+  text-decoration: none;
+}
+
+[data-skin-root] b,
+[data-skin-root] strong {
+  color: #940000;
+}
+
+[data-skin-root] .panel,
+[data-skin-part="notice"],
+[data-skin-part="about"],
+[data-skin-part="vibe"],
+[data-skin-part="url"],
+[data-skin-part="links"],
+[data-skin-part="interests"] {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(18,0,0,0.22) 0%,
+      rgba(18,0,0,0.14) 58%,
+      rgba(18,0,0,0.08) 100%
+    ) !important;
+  border: 9px double #000 !important;
+  border-radius: 0 !important;
+}
+
+[data-skin-root] .panel__heading {
+  background: rgba(0,0,0,0.7) !important;
+  border: inset #921d1d;
+  box-shadow: 4px 5px #7b0505;
+  color: #72878c;
+  text-align: center;
+}
+
+[data-skin-root] .panel__body {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,0,0,0.18) 0%,
+      rgba(0,0,0,0.1) 52%,
+      rgba(0,0,0,0.04) 100%
+    ) !important;
+  border: 6px double #000;
+  box-shadow: 5px 8px rgba(186,0,0,0.24) !important;
+  color: #72878c;
+}
+
+[data-skin-part="interests"] td {
+  background: rgba(118,0,8,0.55) !important;
+  border-bottom: 1px dashed #b71414;
+  box-shadow: 2px 5px #9a1010;
+}
+
+[data-skin-part="photo"] img,
+[data-skin-part="photo"] .profile-placeholder {
+  border: 5px double #831919;
+  box-shadow: 0 0 15px #ff0707;
+}
+
+[data-skin-part="friends"] .person-card__image,
+[data-skin-part="friends"] .profile-placeholder {
+  filter: grayscale(100%);
+}
+
+[data-skin-part="actions"] .profile-actions__cell {
+  background: rgba(255,8,8,0.24);
+  border-color: #122945;
+}
+
+[data-skin-part="actions"] .profile-action {
+  color: #72878c;
+}
+
+[data-skin-part="actions"] .profile-action .icon {
+  display: none;
+}
+
+[data-skin-part="actions"] .profile-action::before {
+  background: var(--skin-action-icon) center / contain no-repeat;
+  content: "";
+  display: inline-block;
+  flex: 0 0 24px;
+  height: 24px;
+  width: 24px;
+}
+
+[data-skin-part="actions"] .profile-actions__cell:nth-child(1) .profile-action {
+  --skin-action-icon: url("https://64.media.tumblr.com/39d12f494b1d12c0418c3376a47621fe/3fe4c2706e5d6a04-4e/s75x75_c1/db3dee7f8bdc11d1493dbd719b115b8eb0e71af4.gifv");
+}
+
+[data-skin-part="actions"] .profile-actions__cell:nth-child(2) .profile-action {
+  --skin-action-icon: url("https://64.media.tumblr.com/ec41db978bff21c52c34f9fa50fbea75/a8a378b393f2415c-b4/s75x75_c1/034c261eeb9e5939039abd7cd6f2808721654930.gifv");
+}
+
+[data-skin-part="actions"] .profile-actions__cell:nth-child(3) .profile-action {
+  --skin-action-icon: url("https://64.media.tumblr.com/cdb1a062c5b241ff54bda869be6b8fda/072f93d78594d9a6-ce/s75x75_c1/cd1f762c89a975fe5d6c1379a4812f15d8e03da8.gifv");
+}
+
+[data-skin-part="actions"] .profile-actions__cell:nth-child(4) .profile-action {
+  --skin-action-icon: url("https://64.media.tumblr.com/39d12f494b1d12c0418c3376a47621fe/3fe4c2706e5d6a04-4e/s75x75_c1/db3dee7f8bdc11d1493dbd719b115b8eb0e71af4.gifv");
+}
+
+[data-skin-part="actions"] .profile-actions__cell:nth-child(5) .profile-action {
+  --skin-action-icon: url("https://64.media.tumblr.com/4ebc06a9d6e50fffe3262071f5bf18b5/3fe4c2706e5d6a04-18/s75x75_c1/1c66b430dd5c44ebb37e1856f6910b93a7ce8948.gifv");
+}
+
+[data-skin-part="actions"] .profile-actions__cell:nth-child(6) .profile-action {
+  --skin-action-icon: url("https://64.media.tumblr.com/cdb1a062c5b241ff54bda869be6b8fda/072f93d78594d9a6-ce/s75x75_c1/cd1f762c89a975fe5d6c1379a4812f15d8e03da8.gifv");
+}
+
+[data-skin-part="actions"]::after {
+  background: url("https://64.media.tumblr.com/231810d2b14bb8cbd0a3f717f3a3df3e/b2a4e94659fae40e-1d/s640x960/3e5e8d98a17f8328077e39ff55b23fd600ca8ae1.gifv") center / contain no-repeat;
+  content: "";
+  display: block;
+  height: 30px;
+  margin-top: 6px;
+}
+
+[data-skin-part="custom-html"] .skin-decoration {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+[data-skin-part="custom-html"] .skin-decoration img {
+  max-height: 150px;
+  max-width: min(100%, 180px);
+  object-fit: contain;
+}
+
+[data-skin-part="footer"] {
+  background: url("https://i.pinimg.com/originals/91/fb/57/91fb5704a5c98a82f84c184d80650154.gif") center / auto #59001e;
+  background-blend-mode: soft-light;
+}
+</style>

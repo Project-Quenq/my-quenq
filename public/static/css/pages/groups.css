@@ -1,0 +1,16 @@
+.group-owner {
+  margin: calc(-1 * var(--space-3)) 0 0;
+}
+
+.group-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--font-size-small);
+  gap: var(--space-4) var(--space-5);
+  margin: 0;
+}
+
+.group-description {
+  margin: 0;
+}

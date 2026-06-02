@@ -1,0 +1,10 @@
+.page-frame > *,
+.split-layout__pane > * {
+  margin-block: 0;
+}
+
+.page-frame > .page-heading:first-child,
+.page-frame > h1:first-child,
+.page-frame > .post-card:first-child {
+  margin-top: var(--space-6);
+}

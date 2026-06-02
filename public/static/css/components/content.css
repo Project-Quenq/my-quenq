@@ -1,0 +1,107 @@
+.content-card,
+.context-card {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.page-frame > .content-card {
+  background: var(--color-brand-soft);
+  border: var(--border-thin) solid var(--surface-border);
+  border-radius: var(--radius-panel);
+  box-shadow: var(--surface-shadow);
+  display: grid;
+  gap: var(--space-7);
+  margin: 0;
+  padding: var(--space-5) var(--space-6);
+}
+
+.content-card > :where(h1, h2, h3, h4, p, ul, ol) {
+  margin: 0;
+}
+
+.content-card > :where(div) > :first-child {
+  margin-top: 0;
+}
+
+.content-card > :where(div) > :last-child {
+  margin-bottom: 0;
+}
+
+.user-content {
+  color: inherit;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.user-content > :first-child {
+  margin-top: 0;
+}
+
+.user-content > :last-child {
+  margin-bottom: 0;
+}
+
+.user-content :where(p, ul, ol, blockquote) {
+  margin: 0 0 var(--space-6);
+}
+
+.user-content :where(ul, ol) {
+  padding-left: var(--space-10);
+}
+
+.user-content li + li {
+  margin-top: var(--space-2);
+}
+
+.user-content :where(h2, h3) {
+  color: var(--color-brand);
+  line-height: var(--line-height-body);
+  margin: var(--space-8) 0 var(--space-4);
+}
+
+.user-content h2 {
+  border-bottom: var(--border-thin) solid var(--color-panel-rule);
+  font-size: 1.15em;
+  padding-bottom: var(--space-2);
+}
+
+.user-content h3 {
+  font-size: 1.05em;
+}
+
+.user-content blockquote {
+  background: var(--surface-background-soft);
+  border-left: var(--border-medium) solid var(--surface-border);
+  margin-left: 0;
+  margin-right: 0;
+  padding: var(--space-4) var(--space-5);
+}
+
+.user-content code {
+  background: var(--color-field);
+  border: var(--border-thin) solid var(--color-field-border);
+  border-radius: var(--radius-subtle);
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.95em;
+  padding: 0 var(--space-1);
+}
+
+.card-attribution {
+  font-style: italic;
+}
+
+.card-note {
+  color: var(--color-text-muted);
+}
+
+.context-card {
+  background: var(--surface-background-raised);
+  border: var(--border-thin) solid var(--color-brand-accent);
+  border-radius: var(--radius-panel);
+  box-shadow: var(--surface-shadow);
+  padding: var(--space-3);
+}
+
+.content-actions {
+  margin: 0;
+}

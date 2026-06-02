@@ -1,0 +1,23 @@
+.count-badge {
+  align-items: center;
+  background: var(--count-badge-background, var(--color-brand-accent));
+  border-radius: var(--count-badge-radius, 999px);
+  color: var(--count-badge-color, var(--color-text-on-bright));
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: var(--count-badge-font-size, var(--font-size-caption));
+  font-variant-numeric: tabular-nums;
+  font-weight: bold;
+  justify-content: center;
+  line-height: 1;
+  min-block-size: var(--count-badge-min-size, 1.5em);
+  min-inline-size: var(--count-badge-min-size, 1.5em);
+  padding: var(--count-badge-padding-y, 0) var(--count-badge-padding-x, var(--space-2));
+  text-align: center;
+  white-space: nowrap;
+}
+
+.count-badge--attention {
+  --count-badge-background: var(--color-danger);
+  --count-badge-color: var(--color-white);
+}

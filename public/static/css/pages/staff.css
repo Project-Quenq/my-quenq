@@ -1,0 +1,270 @@
+.report {
+  background: var(--surface-background-raised);
+  border: var(--border-thin) solid var(--surface-border);
+  border-radius: var(--radius-panel);
+  box-shadow: var(--surface-shadow);
+  display: grid;
+  gap: var(--space-5);
+  margin: 0;
+  padding: var(--space-5);
+}
+
+.report > * {
+  margin-block: 0;
+}
+
+.staff-subnav {
+  --icon-size: 1em;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-3);
+  line-height: 1.4;
+}
+
+.staff-subnav__item {
+  align-items: center;
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+.staff-subnav__item::before {
+  content: "[";
+}
+
+.staff-subnav__item::after {
+  content: "]";
+}
+
+.icon-field {
+  align-items: center;
+  display: flex;
+  gap: var(--space-3);
+}
+
+.icon-field .icon {
+  color: var(--color-brand);
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.icon-field .icon svg {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.icon-field input {
+  min-width: 0;
+}
+
+.report__summary {
+  background: var(--color-row-alt);
+  border: var(--border-thin) solid var(--surface-border-soft);
+  border-radius: var(--radius-panel);
+  margin: 0;
+  padding: var(--space-3);
+}
+
+.report__resolution {
+  border-top: var(--border-thin) solid var(--surface-rule);
+  color: var(--color-text-muted);
+  padding-top: var(--space-4);
+}
+
+.audit-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.audit-table {
+  min-width: 48rem;
+  table-layout: fixed;
+}
+
+.audit-table__time-column {
+  width: 18%;
+}
+
+.audit-table__actor-column {
+  width: 18%;
+}
+
+.audit-table__action-column {
+  width: 18%;
+}
+
+.audit-table__subject-column {
+  width: 46%;
+}
+
+.audit-table td {
+  text-align: left;
+}
+
+.audit-action-name,
+.audit-subject-label {
+  display: block;
+  font-weight: bold;
+}
+
+.audit-action-cell small,
+.audit-subject-cell small,
+.audit-table td > small {
+  color: var(--color-text-muted);
+  display: block;
+  font-size: var(--font-size-small);
+  margin-top: var(--space-1);
+  overflow-wrap: anywhere;
+}
+
+.audit-subject-label small {
+  display: inline;
+  margin-left: var(--space-2);
+}
+
+.audit-subject-summary {
+  background: var(--color-row-alt);
+  border: var(--border-thin) solid var(--surface-border-soft);
+  border-radius: var(--radius-panel);
+  display: block;
+  margin-top: var(--space-2);
+  padding: var(--space-2);
+}
+
+.audit-note {
+  margin-top: var(--space-2);
+}
+
+.audit-note summary {
+  cursor: pointer;
+}
+
+.moderation-form {
+  border-top: var(--border-thin) solid var(--surface-rule);
+  margin-top: 0;
+  padding-top: var(--space-5);
+}
+
+.moderation-form button {
+  margin: var(--space-2) var(--space-2) 0 0;
+}
+
+.automod-section {
+  border-bottom: var(--border-thin) solid var(--surface-rule);
+  margin: 0;
+  padding: 0 0 var(--space-7);
+  scroll-margin-top: var(--space-10);
+}
+
+.automod-section h4 {
+  margin-top: 0;
+}
+
+.automod-rule-list {
+  display: grid;
+  gap: var(--list-stack-gap);
+}
+
+.automod-rule {
+  background: var(--surface-background-raised);
+  border: var(--border-thin) solid var(--surface-border);
+  border-radius: var(--radius-panel);
+  margin: 0;
+  padding: var(--space-4);
+  scroll-margin-top: var(--space-10);
+}
+
+.automod-rule__summary {
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.automod-rule__meta {
+  color: var(--color-text-muted);
+  margin-left: var(--space-4);
+}
+
+.automod-rule .form-stack {
+  margin-top: var(--space-5);
+}
+
+.rate-limit-panel > .panel__heading {
+  align-items: center;
+}
+
+.rate-limit-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.rate-limit-table {
+  min-width: 32rem;
+  table-layout: fixed;
+}
+
+.rate-limit-table__action-column {
+  width: 54%;
+}
+
+.rate-limit-table__limit-column {
+  width: 20%;
+}
+
+.rate-limit-table__window-column {
+  width: 26%;
+}
+
+.rate-limit-table th,
+.rate-limit-table td {
+  vertical-align: middle;
+}
+
+.rate-limit-action-cell {
+  text-align: left;
+}
+
+.rate-limit-action-name {
+  display: block;
+  font-weight: bold;
+}
+
+.rate-limit-action-cell small {
+  color: var(--color-text-muted);
+  overflow-wrap: anywhere;
+}
+
+.rate-limit-control {
+  align-items: center;
+  display: inline-flex;
+  gap: var(--space-2);
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.rate-limit-control input {
+  box-sizing: border-box;
+  max-width: 5rem;
+  min-width: 0;
+  text-align: right;
+  width: 100%;
+}
+
+.rate-limit-note {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+  text-align: center;
+}
+
+.rate-limit-actions,
+.rate-limit-reset-form {
+  display: flex;
+  justify-content: center;
+}
+
+.rate-limit-reset-form {
+  margin-top: var(--space-4);
+}
+
+.rate-limit-reset-form button {
+  width: auto;
+}

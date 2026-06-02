@@ -1,0 +1,17 @@
+@layer tokens {
+  :root:not([data-theme-lock="light"]) {
+    color-scheme: dark;
+
+    --theme-backdrop: #171c20;
+    --theme-page: var(--theme-backdrop);
+    --theme-surface: #22282f;
+    --theme-page-text: #f0f0f0;
+    --theme-link: #a4b9be;
+    --theme-muted: #5c6f82;
+    --theme-danger: #f87171;
+    --theme-success-text: var(--theme-success);
+
+    --theme-toggle-dark-display: none;
+    --theme-toggle-light-display: inline-flex;
+  }
+}

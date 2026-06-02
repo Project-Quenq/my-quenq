@@ -1,0 +1,12 @@
+.signup-page h1 {
+  text-align: center;
+}
+
+.benefits-panel .panel__body {
+  padding: var(--space-3);
+}
+
+.benefits-panel__list {
+  margin: 0;
+  padding-left: var(--space-10);
+}

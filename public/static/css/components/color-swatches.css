@@ -1,0 +1,43 @@
+.color-swatch-stack {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.color-swatches {
+  background: var(--surface-background-tint);
+  border: var(--border-thin) solid var(--surface-border);
+  border-radius: var(--radius-panel);
+  box-shadow: var(--surface-shadow);
+  color: var(--color-text);
+  padding: var(--space-5);
+}
+
+.color-swatches__controls {
+  align-items: center;
+  column-gap: var(--space-8);
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: var(--space-5);
+}
+
+.color-swatches__field {
+  align-items: center;
+  display: flex;
+  gap: var(--space-3);
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.color-swatches__field span {
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+
+.color-swatches__field input {
+  flex: 0 0 auto;
+  height: var(--control-min-height);
+  min-height: var(--control-min-height);
+  padding: 0;
+  width: 3rem;
+}

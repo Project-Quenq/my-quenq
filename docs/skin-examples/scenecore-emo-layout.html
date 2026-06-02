@@ -1,0 +1,147 @@
+<!--
+Original SpaceHey layout credit:
+TheJasmineSixx / LunaGloomyCore
+https://layouts.spacehey.com/layout?id=611
+-->
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+
+@keyframes nineties-bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+  100% { transform: translateY(0); }
+}
+
+[data-skin-page] {
+  --skin-palette-accent: #c50576;
+  --skin-palette-accent-text: #ffffff;
+  --skin-palette-backdrop: #000000;
+  --skin-palette-chrome: #000000;
+  --skin-palette-chrome-text: #00ffef;
+  --skin-palette-link: #ffffff;
+  --skin-palette-link-hover: turquoise;
+  --skin-palette-muted: #ffd1dc;
+  --skin-palette-page: #000000;
+  --skin-palette-page-text: #00ffef;
+  --skin-palette-surface: #000000;
+  --skin-palette-surface-text: #00ffef;
+  background: url("https://64.media.tumblr.com/fd9dea9bd9c3d403dff1ac61caca1091/tumblr_orpi2cL3QU1wpzpibo1_400.gifv") center / auto;
+}
+
+[data-skin-part="shell"],
+[data-skin-root],
+[data-skin-root] * {
+  font-family: "Potta One", system-ui, sans-serif;
+}
+
+[data-skin-root] {
+  background-image: url("https://wallpapercave.com/wp/wp7153946.jpg");
+  background-repeat: repeat;
+  border: 12px solid #000;
+  border-radius: 14px;
+  color: #00ffef;
+  text-shadow: 1px 1px 2px #000, 0 0 25px #000, 0 0 3px #000;
+}
+
+[data-skin-part="navigation"] {
+  background-image: url("https://64.media.tumblr.com/b305a18f19862af6acf46fdad8949649/b5987e3961527536-94/s2048x3072/a25f22fd8a7d5c893f8edb36aab4fdc807234922.gif") !important;
+  border-radius: 12px;
+}
+
+[data-skin-part="navigation-top"] {
+  background: transparent !important;
+}
+
+[data-skin-part="navigation-links"] {
+  background: rgba(0,0,0,0.3) !important;
+}
+
+[data-skin-part="name"] {
+  color: turquoise;
+  text-shadow: 2px 2px 3px #ffd1dc, 0 0 25px #ffd1dc, 0 0 5px #000;
+}
+
+[data-skin-root] a {
+  color: white;
+}
+
+[data-skin-root] .panel,
+[data-skin-part="notice"],
+[data-skin-part="vibe"],
+[data-skin-part="url"],
+[data-skin-part="links"],
+[data-skin-part="interests"] {
+  background: #000 !important;
+  border: 4px outset #ffd1dc !important;
+  border-radius: 15px !important;
+}
+
+[data-skin-part="about"],
+[data-skin-part="notice"] {
+  animation: nineties-bounce 2s infinite ease;
+  background-image: url("https://64.media.tumblr.com/1e2598616e90eb0f6b243be1b9642ae1/5583e57f872090cb-79/s2048x3072_c0,21726,100000,77976/ccaa0b27eaa3ea333eeb0df8a6838f4600d3117c.gif") !important;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 #2d1157;
+  padding: 20px;
+}
+
+[data-skin-part="notice"] {
+  animation-delay: 0.15s;
+  background-image: url("https://64.media.tumblr.com/d62f9c09497fe39ad002fb18c45bf61b/2c14b464e52d1596-fa/s400x600/db8362b0df0aae30ad31efa61ff058b9f1b91317.jpg") !important;
+  border: 0 !important;
+  color: #fff;
+  text-align: center;
+}
+
+[data-skin-part="notice"] h3 {
+  filter: drop-shadow(3px 3px 0 #000);
+}
+
+[data-skin-root] .panel__heading {
+  background: #000 !important;
+  border: 1px solid #c50576;
+  border-radius: 15px 15px 0 0;
+  color: #c50576;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000;
+}
+
+[data-skin-root] .panel__body,
+[data-skin-part="wall"] .post-card,
+[data-skin-part="wall"] .composer {
+  background-image: url("https://i.pinimg.com/originals/70/ea/cb/70eacb83950c11dbaba19267eacc3496.gif");
+  color: #00ffef;
+}
+
+[data-skin-part="interests"] td {
+  background: rgba(0,0,0,0) !important;
+  border: 1px solid #ffd1dc;
+}
+
+[data-skin-part="photo"] img,
+[data-skin-part="photo"] .profile-placeholder,
+[data-skin-root] img {
+  border-radius: 12px;
+}
+
+[data-skin-part="actions"] {
+  background: rgba(0,0,0,0.78) !important;
+}
+
+[data-skin-part="actions"] .profile-actions__cell {
+  background: rgba(0,0,0,0.55);
+  border-color: #ffd1dc;
+}
+
+[data-skin-part="actions"] .profile-action {
+  color: gold;
+  text-shadow: 1px 1px 2px #39ff14, 0 0 25px #39ff14;
+}
+
+[data-skin-part="footer"] {
+  background: turquoise !important;
+  border-radius: 12px;
+  color: #000;
+}
+</style>

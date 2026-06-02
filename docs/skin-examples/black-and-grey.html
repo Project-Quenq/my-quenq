@@ -1,0 +1,146 @@
+<!--
+Original SpaceHey layout credit:
+Bela
+https://layouts.spacehey.com/layout?id=2719
+-->
+
+<style>
+[data-skin-page] {
+  --skin-palette-accent: #737373;
+  --skin-palette-accent-text: whitesmoke;
+  --skin-palette-backdrop: dimgray;
+  --skin-palette-chrome: #000000;
+  --skin-palette-chrome-text: whitesmoke;
+  --skin-palette-link: #9ca3af;
+  --skin-palette-link-hover: #ffffff;
+  --skin-palette-muted: #b8b8b8;
+  --skin-palette-page: #000000;
+  --skin-palette-page-text: whitesmoke;
+  --skin-palette-surface: #000000;
+  --skin-palette-surface-text: whitesmoke;
+  --skin-frame-border: 2px solid gray;
+  --skin-radius-panel: 0;
+  background-color: dimgray;
+  background-image: url("https://wallpapercave.com/wp/wp2686927.jpg");
+  background-position: center;
+  background-size: contain;
+  cursor: url("https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur"), auto;
+}
+
+[data-skin-part="shell"],
+[data-skin-root],
+[data-skin-root] * {
+  font-family: "Courier New", Courier, monospace;
+}
+
+[data-skin-root] {
+  color: whitesmoke;
+  text-shadow: none;
+}
+
+[data-skin-root] a {
+  color: #9ca3af;
+}
+
+[data-skin-root] a:hover {
+  color: white;
+  cursor: url("https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur"), auto;
+}
+
+[data-skin-part="navigation"],
+[data-skin-part="footer"],
+[data-skin-part="name"],
+[data-skin-part="about"],
+[data-skin-part="notice"],
+[data-skin-part="vibe"],
+[data-skin-part="actions"],
+[data-skin-part="url"],
+[data-skin-part="links"],
+[data-skin-part="interests"],
+[data-skin-part="bio"],
+[data-skin-part="blog-preview"],
+[data-skin-part="wall"],
+[data-skin-part="friends"] {
+  background: #000 !important;
+  border: var(--skin-frame-border) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+[data-skin-part="navigation-top"],
+[data-skin-part="navigation-links"] {
+  background: transparent !important;
+  text-align: center;
+}
+
+[data-skin-part="navigation"] img,
+[data-skin-part="actions"] img {
+  filter: brightness(0) saturate(100%) invert(50%) sepia(5%) saturate(326%) hue-rotate(174deg) brightness(92%) contrast(82%);
+}
+
+[data-skin-part="navigation-links"] li:not(:last-child)::after,
+[data-skin-part="footer"] li:not(:last-child)::after {
+  color: white;
+  content: "|";
+}
+
+[data-skin-part="name"] {
+  color: white;
+  font-size: 30px !important;
+  font-weight: 400;
+  padding: 5px;
+  text-align: center;
+}
+
+[data-skin-part="photo"] {
+  padding: 10px;
+}
+
+[data-skin-part="photo"] img,
+[data-skin-part="photo"] .profile-placeholder,
+[data-skin-part="friends"] .person-card__image,
+[data-skin-part="friends"] .profile-placeholder {
+  border: var(--skin-frame-border);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+[data-skin-part="details"],
+[data-skin-part="bio-content"],
+[data-skin-part="interests"] td,
+[data-skin-part="wall"] .post-card,
+[data-skin-part="wall"] .composer {
+  background: transparent !important;
+  color: whitesmoke;
+}
+
+[data-skin-root] .panel__heading {
+  background: none !important;
+  color: whitesmoke;
+  text-align: center;
+}
+
+[data-skin-part="bio"] .panel__heading,
+[data-skin-part="url"] {
+  display: none;
+}
+
+[data-skin-root] .panel__body {
+  background: #000 !important;
+  color: whitesmoke;
+}
+
+[data-skin-part="actions"] .profile-actions__cell {
+  background: #000;
+  border-color: gray;
+}
+
+[data-skin-part="actions"] .profile-action {
+  color: #9ca3af;
+}
+
+[data-skin-part="wall"] .post-list {
+  max-height: 500px;
+  overflow-y: auto;
+}
+</style>

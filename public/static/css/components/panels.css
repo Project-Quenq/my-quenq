@@ -1,0 +1,74 @@
+.panel {
+  --panel-body-background: var(--color-surface);
+  --panel-border-color: var(--color-brand-accent);
+  --panel-border-width: var(--border-medium);
+  --panel-heading-background: var(--color-brand-accent);
+  --panel-heading-border: var(--panel-border-color);
+  --panel-heading-color: var(--color-text-on-bright);
+
+  background: var(--panel-body-background);
+  border: var(--panel-border-width) solid var(--panel-border-color);
+  border-radius: var(--radius-panel);
+  box-shadow: var(--surface-shadow);
+  overflow: hidden;
+  width: 100%;
+}
+
+.panel--soft {
+  --panel-border-color: var(--color-panel-accent);
+  --panel-border-width: var(--border-thin);
+  --panel-heading-background: var(--color-panel-accent);
+  --panel-heading-border: var(--color-panel-rule);
+  --panel-heading-color: var(--color-brand);
+}
+
+.panel--strong {
+  --panel-body-background: var(--color-surface);
+}
+
+.panel__heading {
+  align-items: baseline;
+  background: var(--panel-heading-background);
+  border-bottom: var(--border-thin) solid var(--panel-heading-border);
+  color: var(--panel-heading-color);
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  min-width: 0;
+  padding: var(--space-1) var(--space-4);
+}
+
+.panel__heading h1,
+.panel__heading h2,
+.panel__heading h3,
+.panel__heading h4 {
+  display: inline-block;
+  font-size: var(--font-size-panel-heading);
+  grid-column: 2;
+  justify-self: center;
+  line-height: var(--line-height-body);
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+
+.panel__body {
+  align-content: start;
+  background: var(--panel-body-background);
+  display: grid;
+  gap: var(--panel-body-gap);
+  padding: var(--space-4);
+}
+
+.panel__body > * {
+  margin-block: 0;
+}
+
+.panel__action {
+  flex: 0 0 auto;
+  font-size: var(--font-size-caption);
+  grid-column: 3;
+  justify-self: end;
+  text-align: right;
+}

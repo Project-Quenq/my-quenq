@@ -1,0 +1,27 @@
+.notification-list {
+  display: grid;
+  gap: var(--space-7);
+}
+
+.notification-card {
+  background: var(--surface-background-raised);
+  border: var(--border-thin) solid var(--surface-border);
+  border-radius: var(--radius-panel);
+  box-shadow: var(--surface-shadow);
+  display: grid;
+  gap: var(--space-7);
+  margin: 0;
+  padding: var(--space-5) var(--space-6);
+}
+
+.notification-card--unread {
+  border-color: var(--color-brand-accent);
+  box-shadow: var(--surface-shadow), inset var(--border-medium) 0 0 var(--color-brand-accent);
+}
+
+.notification-card__meta {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+}

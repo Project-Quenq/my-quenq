@@ -1,0 +1,220 @@
+:root {
+  color-scheme: light;
+
+  --color-white: #ffffff;
+  --color-ink: #1a1a1a;
+
+  /* App theme values written by admin branding. Profile skins use these as fallbacks. */
+  --app-theme-chrome: #43515e;
+  --app-theme-chrome-text: var(--color-white);
+  --app-theme-accent: #43515e;
+  --app-theme-accent-text: var(--color-white);
+  --app-theme-link: #2d353e;
+  --app-theme-backdrop: #e2e7ec;
+  --app-theme-page: #ffffff;
+  --app-theme-surface: #ffffff;
+  --app-theme-page-text: var(--color-ink);
+  --app-theme-surface-text: var(--app-theme-page-text);
+  --app-theme-link-hover: color-mix(in srgb, var(--app-theme-link) 68%, var(--app-theme-page-text));
+  --app-theme-surface-link: var(--app-theme-link);
+  --app-theme-surface-link-hover: var(--app-theme-link-hover);
+  --app-theme-muted: #5c6f82;
+  --app-theme-focus: #a4b9be;
+
+  /* Theme source tokens for the app shell and component palette. */
+  --theme-chrome: var(--app-theme-chrome);
+  --theme-chrome-text: var(--app-theme-chrome-text);
+  --theme-accent: var(--app-theme-accent);
+  --theme-accent-text: var(--app-theme-accent-text);
+  --theme-link: var(--app-theme-link);
+  --theme-backdrop: var(--app-theme-backdrop);
+  --theme-page: var(--app-theme-page);
+  --theme-surface: var(--app-theme-surface);
+  --theme-page-text: var(--app-theme-page-text);
+  --theme-surface-text: var(--theme-page-text);
+  --theme-link-hover: color-mix(in srgb, var(--theme-link) 68%, var(--theme-page-text));
+  --theme-surface-link: var(--theme-link);
+  --theme-surface-link-hover: var(--theme-link-hover);
+  --theme-muted: var(--app-theme-muted);
+  --theme-danger: #d32626;
+  --theme-danger-text: var(--theme-danger);
+  --theme-success: #34d399;
+  --theme-success-ink: var(--color-ink);
+  --theme-success-text: #047857;
+  --theme-focus: var(--app-theme-focus);
+
+  /* Background texture for the default app shell. */
+  --theme-page-grid-a: color-mix(in srgb, var(--theme-backdrop) 88%, white);
+  --theme-page-grid-b: color-mix(in srgb, var(--theme-backdrop) 94%, black);
+
+  --theme-toggle-dark-display: inline-flex;
+  --theme-toggle-light-display: none;
+
+  --font-body: Verdana, Arial, Helvetica, sans-serif;
+  --line-height-body: 1.225;
+  --font-size-main: 80%;
+  --font-size-footer: 70%;
+  --font-size-note: 90%;
+  --font-size-caption: 80%;
+  --font-size-small: max(0.875em, 12px);
+  --font-size-nav: 10pt;
+  --font-size-nav-link: max(0.98em, 12px);
+  --font-size-utility-action: max(var(--font-size-caption), 12px);
+  --font-size-card-heading: 1.17em;
+  --font-size-panel-heading: 1.06em;
+  --font-size-profile-heading: 1.5em;
+
+  --container-width: 960px;
+  --container-min-height: 100dvh;
+  --content-measure: 600px;
+  --nav-side-min: 130px;
+  --audio-width: 100%;
+  --avatar-size: 80px;
+  --avatar-compact-size: 48px;
+  --profile-photo-size: 235px;
+  --profile-edit-photo-size: 180px;
+  --person-card-width: var(--avatar-size);
+  --person-card-min-height: 100px;
+  --profile-person-card-width: 105px;
+  --details-label-width: 33%;
+  --discussion-author-width: calc(var(--avatar-compact-size) + var(--space-12));
+  --column-compact: 20%;
+  --column-profile: 40%;
+  --column-wide: 60%;
+  --column-aside-min: 9rem;
+  --profile-sidebar-min: calc(var(--profile-photo-size) + (var(--space-6) * 2));
+
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 5px;
+  --space-4: 7px;
+  --space-5: 8px;
+  --space-6: 10px;
+  --space-7: 12px;
+  --space-8: 14px;
+  --space-9: 15px;
+  --space-10: 20px;
+  --space-11: 30px;
+  --space-12: 40px;
+  --layout-stack-gap: var(--space-8);
+  --panel-body-gap: var(--space-7);
+  --list-stack-gap: var(--space-7);
+  --space-main-y: 0;
+  --space-main-x: 0;
+  --space-nav-links-y: 6px;
+  --space-nav-links-x: 16px;
+  --link-separator-gap: 0.45em;
+  --article-title-offset: 3px;
+  --icon-label-gap: 0.35em;
+  --icon-offset-y: -0.22em;
+
+  --border-thin: 1px;
+  --border-medium: 2px;
+  --radius-panel-default: 0;
+  --radius-media-default: 0;
+  --radius-panel: var(--radius-panel-default);
+  --radius-media: var(--radius-media-default);
+  --radius-control-default: 2px;
+  --radius-subtle: var(--radius-control-default);
+  --text-decoration-hairline: 0.5px;
+  --text-underline-offset: 2px;
+  --icon-size: 1.2em;
+  --brand-icon-size: 2em;
+  --avatar-glyph-size: 70%;
+  --control-min-height: 24px;
+  --control-pad-y: var(--space-1);
+  --control-pad-x: var(--space-3);
+  --button-active-shift: 1px;
+  --disabled-opacity: 0.68;
+  --focus-outline-width: 2px;
+  --focus-offset: 1px;
+  --table-cell-y: var(--space-3);
+  --table-cell-x: 6px;
+  --contact-cell-min-height: 32px;
+  --nav-search-width: 170px;
+  --nav-link-min-height: 24px;
+}
+
+:root,
+[data-skin-page],
+[data-author-skin-page] {
+  /* Shared resolver: admin themes and profile skins both feed --theme-* here. */
+  --color-page: var(--theme-backdrop);
+  --color-canvas: var(--theme-page);
+  --color-surface: var(--theme-surface);
+  --color-surface-raised: color-mix(in srgb, var(--color-surface) 94%, var(--color-brand-accent));
+  --color-surface-tint: color-mix(in srgb, var(--color-surface) 90%, var(--color-brand-accent));
+  --color-text: var(--theme-page-text);
+  --color-text-muted: var(--theme-muted);
+  --color-text-on-bright: var(--theme-chrome-text);
+  --color-link: var(--theme-link);
+  --color-link-hover: var(--theme-link-hover);
+  --color-brand: var(--theme-surface-link);
+  --color-brand-accent: var(--theme-chrome);
+  --color-brand-header: color-mix(in srgb, var(--color-brand-accent) 72%, black);
+  --color-brand-nav: color-mix(in srgb, var(--color-brand-accent) 88%, black);
+  --color-brand-soft: color-mix(in srgb, var(--color-surface) 84%, var(--color-brand-accent));
+  --color-brand-border: color-mix(in srgb, var(--color-white) 54%, var(--color-brand-accent));
+  --color-panel-accent: var(--color-brand-soft);
+  --color-panel-accent-soft: color-mix(in srgb, var(--color-surface) 94%, var(--color-brand-accent));
+  --color-panel-rule: color-mix(in srgb, var(--color-brand-border) 72%, var(--color-white));
+  --color-container-border: color-mix(in srgb, var(--color-page) 70%, var(--color-brand-accent));
+  --color-danger: var(--theme-danger);
+  --color-danger-text: var(--theme-danger-text);
+  --color-danger-soft: color-mix(in srgb, var(--color-surface) 88%, var(--color-danger));
+  --color-danger-border: color-mix(in srgb, var(--color-white) 52%, var(--color-danger));
+  --color-success: var(--theme-success);
+  --color-success-ink: var(--theme-success-ink);
+  --color-success-text: var(--theme-success-text);
+  --color-success-soft: color-mix(in srgb, var(--color-surface) 86%, var(--color-success));
+  --color-success-border: color-mix(in srgb, var(--color-white) 52%, var(--color-success));
+  --color-field: color-mix(in srgb, var(--color-surface) 98%, var(--color-canvas));
+  --color-field-disabled: color-mix(in srgb, var(--color-surface) 88%, var(--color-text));
+  --color-field-border-light: var(--color-white);
+  --color-field-border: color-mix(in srgb, var(--color-ink) 42%, var(--color-white));
+  --color-field-border-dark: color-mix(in srgb, var(--color-ink) 62%, var(--color-white));
+  --color-focus: var(--theme-focus);
+  --color-link-focus-bg: var(--color-surface-tint);
+  --color-row-alt: var(--color-surface-tint);
+  --color-shadow-panel: color-mix(in srgb, var(--color-surface) 70%, var(--color-page));
+  --color-shadow-soft: color-mix(in srgb, var(--color-white) 70%, var(--color-ink));
+  --color-shadow-pressed: color-mix(in srgb, var(--color-ink) 55%, black);
+  --color-shadow-card: color-mix(in srgb, var(--color-surface) 68%, var(--color-page));
+  --color-button-primary-bg: var(--theme-accent);
+  --color-button-primary-text: var(--theme-accent-text);
+  --color-button-primary-border-light: color-mix(in srgb, var(--color-white) 54%, var(--color-button-primary-bg));
+  --color-button-primary-border-dark: color-mix(in srgb, var(--color-button-primary-bg) 68%, black);
+  --color-button-primary-hover-bg: var(--color-button-primary-border-dark);
+  --color-button-primary-hover-text: var(--color-button-primary-text);
+  --color-button-secondary-bg: var(--color-surface);
+  --color-button-secondary-text: var(--color-brand);
+  --color-button-secondary-border-light: var(--color-surface-tint);
+  --color-button-secondary-border-dark: var(--color-brand-border);
+  --color-button-secondary-hover-bg: var(--color-surface-tint);
+  --color-button-secondary-hover-text: var(--theme-surface-link-hover);
+  --color-button-danger-bg: var(--color-surface);
+  --color-button-danger-text: var(--color-danger-text);
+  --color-button-danger-border-light: var(--color-danger-border);
+  --color-button-danger-border-dark: var(--color-danger);
+  --color-button-danger-hover-bg: var(--color-danger-soft);
+  --color-button-danger-hover-text: var(--color-danger);
+
+  --surface-background: var(--color-surface);
+  --surface-background-raised: var(--color-surface-raised);
+  --surface-background-soft: var(--color-panel-accent-soft);
+  --surface-background-tint: var(--color-surface-tint);
+  --surface-border: var(--color-brand-border);
+  --surface-border-soft: var(--color-panel-accent);
+  --surface-rule: var(--color-panel-rule);
+  --surface-shadow: var(--shadow-panel);
+
+  --page-background: repeating-linear-gradient(0deg, var(--theme-page-grid-a) 0, var(--theme-page-grid-a) var(--border-thin), var(--theme-page-grid-b) var(--border-thin), var(--theme-page-grid-b) var(--border-medium));
+  --shadow-panel: var(--border-thin) var(--border-thin) 0 var(--color-white), var(--border-medium) var(--border-medium) 0 var(--color-shadow-panel);
+  --shadow-button: inset var(--border-thin) var(--border-thin) 0 var(--button-border-light), var(--border-thin) var(--border-thin) 0 var(--button-border-dark);
+  --shadow-field: inset var(--border-thin) var(--border-thin) var(--border-thin) var(--color-shadow-soft);
+  --shadow-pressed: inset var(--border-thin) var(--border-thin) var(--border-thin) var(--color-shadow-pressed);
+  --shadow-photo: var(--border-medium) var(--border-medium) 0 var(--color-shadow-soft);
+  --shadow-card: var(--border-medium) var(--border-medium) 0 var(--color-shadow-card);
+  --column-divider-shadow: inset calc(var(--border-thin) * -1) 0 0 var(--color-surface), inset calc(var(--border-medium) * -1) 0 0 var(--color-panel-accent-soft);
+  accent-color: var(--color-brand);
+}

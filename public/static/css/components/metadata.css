@@ -1,0 +1,12 @@
+.preview-title {
+  font-weight: bold;
+}
+
+.timestamp {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.meta-subject {
+  font-weight: bold;
+}

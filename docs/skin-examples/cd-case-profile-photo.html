@@ -1,0 +1,72 @@
+<!--
+Original SpaceHey layout credit:
+Valentine
+https://layouts.spacehey.com/layout?id=29048
+-->
+
+<style>
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+[data-skin-part="photo"] {
+  --cd-case-ratio: 183 / 163;
+  --cd-case-width: min(calc(var(--profile-photo-size, 235px) * 1.123), 100%);
+  display: grid;
+  filter: drop-shadow(0 0 0.35rem gray);
+  grid-template-columns: 10.93% minmax(0, 89.07%);
+  margin-inline: auto;
+  overflow: visible;
+  width: var(--cd-case-width);
+  aspect-ratio: var(--cd-case-ratio);
+}
+
+[data-skin-part="photo"]::before {
+  align-self: center;
+  animation: spin 5s infinite linear;
+  aspect-ratio: 1;
+  background: url("https://fluorescent-lights.neocities.org/Digital-CD-Disk-Vector-Transparent-PNG.png") center / contain no-repeat;
+  content: "";
+  grid-column: 1 / 3;
+  grid-row: 1;
+  justify-self: start;
+  transition: translate 0.5s ease;
+  translate: -10.5% 0;
+  width: 82%;
+  z-index: 0;
+}
+
+[data-skin-part="photo"]:hover::before {
+  translate: -38% 0;
+}
+
+[data-skin-part="photo"] img,
+[data-skin-part="photo"] .profile-placeholder {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 0 0 2px #8a8a8a, 0 8px 18px rgba(0, 0, 0, 0.4);
+  grid-column: 2;
+  grid-row: 1;
+  height: 100%;
+  justify-self: stretch;
+  max-width: none;
+  object-fit: cover;
+  width: 100%;
+  z-index: 1;
+}
+
+[data-skin-part="photo"]::after {
+  background:
+    url("https://fluorescent-lights.neocities.org/f0rzNHe.png") center / 100% 100% no-repeat,
+    linear-gradient(150deg, rgba(255,255,255,0.38), rgba(255,255,255,0.12) 42%, rgba(255,255,255,0.55));
+  content: "";
+  grid-column: 1 / 3;
+  grid-row: 1;
+  height: 100%;
+  justify-self: stretch;
+  pointer-events: none;
+  width: 100%;
+  z-index: 2;
+}
+</style>

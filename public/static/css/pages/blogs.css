@@ -1,0 +1,39 @@
+.split-layout--article {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.blog-card__category {
+  font-weight: normal;
+}
+
+.blog-card__category::before {
+  content: "\2022";
+  margin: 0 var(--space-2);
+}
+
+.author-details {
+  display: grid;
+  gap: var(--space-7);
+}
+
+.author-details > :where(h1, h2, h3, h4, p) {
+  margin: 0;
+}
+
+.split-layout--article .article-content {
+  overflow: hidden;
+  padding: 0 var(--space-6) 0 0;
+}
+
+.split-layout--article .article-content p {
+  margin-top: 0;
+}
+
+.split-layout--article .article-content * {
+  max-width: 100%;
+}
+
+.split-layout--article .article-title {
+  margin: var(--article-title-offset) 0 var(--space-3);
+}

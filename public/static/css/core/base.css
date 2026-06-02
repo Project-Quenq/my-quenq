@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-page);
+  background-image: var(--page-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: var(--line-height-body);
+}
+
+@supports (padding-top: env(safe-area-inset-top)) {
+  body {
+    background:
+      linear-gradient(to bottom, var(--color-brand-header) env(safe-area-inset-top, 0px), transparent 0),
+      var(--page-background),
+      var(--color-page);
+  }
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  text-decoration-thickness: var(--text-decoration-hairline);
+  text-underline-offset: var(--text-underline-offset);
+}
+
+a:hover,
+a:active {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+p,
+li {
+  font-size: var(--font-size-small);
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+:where(input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="image"])),
+:where(textarea),
+:where(select) {
+  border-radius: var(--radius-subtle);
+}
+
+:where(input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="image"])),
+:where(textarea),
+:where(select) {
+  background: var(--color-field);
+  border: var(--border-thin) solid var(--color-field-border);
+  border-color: var(--color-field-border-dark) var(--color-field-border-light) var(--color-field-border-light) var(--color-field-border-dark);
+  box-shadow: var(--shadow-field);
+  max-width: 100%;
+  min-height: var(--control-min-height);
+  padding: var(--control-pad-y) var(--control-pad-x);
+}
+
+input[type="file"] {
+  max-width: 100%;
+}
+
+input:disabled,
+input[readonly],
+textarea:disabled,
+select:disabled {
+  background: var(--color-field-disabled);
+  color: var(--color-text-muted);
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button {
+  --button-bg: var(--color-button-primary-bg);
+  --button-text: var(--color-button-primary-text);
+  --button-border-light: var(--color-button-primary-border-light);
+  --button-border-dark: var(--color-button-primary-border-dark);
+  --button-hover-bg: var(--color-button-primary-hover-bg);
+  --button-hover-text: var(--color-button-primary-hover-text);
+
+  align-items: center;
+  background: var(--button-bg);
+  border: var(--border-thin) solid var(--button-border-dark);
+  border-color: var(--button-border-light) var(--button-border-dark) var(--button-border-dark) var(--button-border-light);
+  border-radius: var(--radius-subtle);
+  box-shadow: var(--shadow-button);
+  color: var(--button-text);
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  min-height: var(--control-min-height);
+  padding: var(--control-pad-y) var(--control-pad-x);
+  text-align: center;
+  text-decoration: none;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.button:hover {
+  background: var(--button-hover-bg);
+  color: var(--button-hover-text);
+  text-decoration: none;
+}
+
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+.button:active {
+  box-shadow: var(--shadow-pressed);
+  transform: translate(var(--button-active-shift), var(--button-active-shift));
+}
+
+.button--secondary {
+  --button-bg: var(--color-button-secondary-bg);
+  --button-text: var(--color-button-secondary-text);
+  --button-border-light: var(--color-button-secondary-border-light);
+  --button-border-dark: var(--color-button-secondary-border-dark);
+  --button-hover-bg: var(--color-button-secondary-hover-bg);
+  --button-hover-text: var(--color-button-secondary-hover-text);
+}
+
+.button--danger {
+  --button-bg: var(--color-button-danger-bg);
+  --button-text: var(--color-button-danger-text);
+  --button-border-light: var(--color-button-danger-border-light);
+  --button-border-dark: var(--color-button-danger-border-dark);
+  --button-hover-bg: var(--color-button-danger-hover-bg);
+  --button-hover-text: var(--color-button-danger-hover-text);
+}
+
+.button--selected {
+  --button-bg: var(--color-button-primary-bg);
+  --button-text: var(--color-button-primary-text);
+  --button-border-light: var(--color-button-primary-border-light);
+  --button-border-dark: var(--color-button-primary-border-dark);
+  --button-hover-bg: var(--color-button-primary-hover-bg);
+  --button-hover-text: var(--color-button-primary-hover-text);
+}
+
+button:disabled,
+input[type="button"]:disabled,
+input[type="reset"]:disabled,
+input[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: var(--disabled-opacity);
+  transform: none;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: var(--focus-outline-width) solid var(--color-focus);
+  outline-offset: var(--focus-offset);
+}
+
+a:focus-visible,
+summary:focus-visible {
+  background: var(--color-link-focus-bg);
+}
+
+textarea {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  resize: vertical;
+}
+
+.text-editor {
+  min-height: 18rem;
+  resize: vertical;
+  white-space: pre-wrap;
+}
+
+.text-editor--short {
+  min-height: 7rem;
+}
+
+.text-block {
+  max-width: 100%;
+  overflow: auto;
+  white-space: break-spaces;
+}
+
+table {
+  max-width: 100%;
+}
+
+audio {
+  max-width: 100%;
+  width: var(--audio-width);
+}
+
+.flush-heading {
+  margin: 0;
+}
+
+.inline-form {
+  display: inline;
+}
+
+.icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  margin: 0;
+  vertical-align: var(--icon-offset-y);
+}
+
+:where(a, button, span, summary):has(> .icon) {
+  align-items: center;
+  display: inline-flex;
+  gap: var(--icon-label-gap);
+}
+
+.icon svg {
+  display: block;
+  height: var(--icon-size);
+  stroke: currentColor;
+  width: var(--icon-size);
+}
+
+.count {
+  color: var(--count-color, var(--color-link));
+}
+
+a:hover .count,
+a:active .count {
+  color: inherit;
+}

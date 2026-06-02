@@ -1,0 +1,68 @@
+.action-bar {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4) var(--space-6);
+  width: 100%;
+}
+
+.inline-actions {
+  margin: 0;
+  padding: 0;
+}
+
+.action-bar__primary,
+.action-bar__secondary {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.action-bar__primary {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.action-bar__secondary {
+  color: var(--color-text-muted);
+  flex: 0 1 auto;
+  font-size: var(--font-size-utility-action);
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.action-bar__secondary a {
+  color: var(--color-text-muted);
+}
+
+.action-bar__secondary a:hover,
+.action-bar__secondary a:active {
+  color: var(--color-link-hover);
+}
+
+.action-bar form {
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin: 0;
+}
+
+.action-bar__secondary button,
+.action-bar__secondary .button {
+  min-height: auto;
+  padding: var(--space-2) var(--space-3);
+}
+
+.prop-count {
+  cursor: default;
+}
+
+.prop-count:hover,
+.prop-count:active {
+  background: var(--button-bg);
+  box-shadow: var(--shadow-button);
+  color: var(--button-text);
+  transform: none;
+}

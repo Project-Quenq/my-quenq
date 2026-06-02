@@ -1,0 +1,222 @@
+<!--
+Original SpaceHey layout credit:
+Cory
+https://layouts.spacehey.com/layout?id=1169
+-->
+
+<style>
+[data-skin-page] {
+  --skin-blue-gradient: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%) center / cover no-repeat;
+  --skin-palette-accent: #115ee7;
+  --skin-palette-accent-text: #ffffff;
+  --skin-palette-backdrop: #70b6ed;
+  --skin-palette-chrome: #155be5;
+  --skin-palette-chrome-text: #ffffff;
+  --skin-palette-link: #0645c8;
+  --skin-palette-link-hover: #0b2e84;
+  --skin-palette-muted: #4a4a4a;
+  --skin-palette-page: transparent;
+  --skin-palette-page-text: #111111;
+  --skin-palette-surface: #ece9d8;
+  --skin-palette-surface-text: #111111;
+  background-attachment: fixed;
+  background-image: url("https://s3.amazonaws.com//depot.pacdudegames.com/spacehey/bliss.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+[data-skin-part="shell"],
+[data-skin-root],
+[data-skin-root] * {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+
+[data-skin-part="navigation"] {
+  background: #ece9d8 !important;
+  border: 2px solid #0b46d7;
+  box-shadow: 7px 7px 14px rgba(0,0,0,0.45);
+  color: #111111 !important;
+  text-shadow: none !important;
+}
+
+[data-skin-part="navigation"]::before,
+[data-skin-root] .panel__heading,
+[data-skin-part="name"] {
+  background: var(--skin-blue-gradient) !important;
+  color: white !important;
+  text-shadow: 1px 1px #00337a;
+}
+
+[data-skin-part="navigation"]::before {
+  content: "quenq Header";
+  display: block;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+[data-skin-part="navigation-top"] {
+  background: #ece9d8 !important;
+}
+
+[data-skin-part="navigation-top"],
+[data-skin-part="navigation-top"] a,
+[data-skin-part="navigation-top"] button,
+[data-skin-part="navigation-top"] input,
+[data-skin-part="navigation-links"],
+[data-skin-part="navigation-links"] a {
+  color: #111111 !important;
+  text-shadow: none !important;
+}
+
+[data-skin-part="navigation-links"] {
+  background: linear-gradient(#ffffff, #ece9d8) !important;
+  border-top: 1px solid #aca899;
+  text-align: center;
+}
+
+[data-skin-part="search"] button {
+  background: var(--skin-blue-gradient) !important;
+  border: 2px outset #ffffff;
+  color: #ffffff !important;
+  text-shadow: 1px 1px #00337a !important;
+}
+
+[data-skin-root] .panel,
+[data-skin-part="notice"],
+[data-skin-part="url"],
+[data-skin-part="vibe"],
+[data-skin-part="links"],
+[data-skin-part="interests"] {
+  background: #ece9d8 !important;
+  border: 2px solid #0b46d7 !important;
+  border-radius: 8px 8px 0 0 !important;
+  box-shadow: 7px 7px 14px rgba(0,0,0,0.35) !important;
+}
+
+[data-skin-root] .panel__heading {
+  border-radius: 6px 6px 0 0;
+  padding: 6px 8px;
+  text-align: center;
+}
+
+[data-skin-root] .panel__body,
+[data-skin-part="wall"] .post-card,
+[data-skin-part="wall"] .composer,
+[data-skin-part="interests"] td {
+  background: #fff !important;
+  color: #111;
+}
+
+[data-skin-root]::after {
+  background: url("https://media.giphy.com/media/w3AmrG1E1vr56/giphy.gif") center / contain no-repeat;
+  bottom: clamp(16px, 6vh, 72px);
+  content: "";
+  display: block;
+  height: 110px;
+  pointer-events: none;
+  position: fixed;
+  right: clamp(12px, 3vw, 42px);
+  width: 140px;
+  z-index: 1;
+}
+
+[data-skin-part="identity"] {
+  gap: 0;
+}
+
+[data-skin-part="name"] {
+  border: 2px solid #0b46d7;
+  border-radius: 6px 6px 0 0;
+  box-sizing: border-box;
+  display: block;
+  justify-self: stretch;
+  margin-bottom: 0;
+  padding: 8px 14px;
+  width: 100%;
+}
+
+[data-skin-part="about"] {
+  background: #fff;
+  border-color: #0b46d7 !important;
+  border-radius: 0 !important;
+  border-style: solid !important;
+  border-width: 0 2px 2px !important;
+  box-shadow: 7px 7px 14px rgba(0,0,0,0.35);
+  margin-top: 0;
+  padding: 20px;
+}
+
+[data-skin-part="photo"] {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+[data-skin-part="photo"] img,
+[data-skin-part="photo"] .profile-placeholder {
+  border: 3px ridge #555;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+[data-skin-part="actions"] .profile-actions__cell {
+  background: #0050ee;
+  border-color: #aca899;
+  min-width: 0;
+  padding: 6px;
+}
+
+[data-skin-part="actions"] .profile-action {
+  background: linear-gradient(#ffffff, #ece9d8);
+  border: 2px outset #ffffff;
+  color: #111;
+  gap: 0.45em;
+  justify-content: flex-start;
+  min-width: 0;
+  padding: 6px 7px;
+  white-space: normal;
+}
+
+[data-skin-part="actions"] .profile-action .icon {
+  flex: 0 0 auto;
+}
+
+[data-skin-part="actions"] .profile-action span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+[data-skin-part="actions"] .panel__heading {
+  background: radial-gradient(circle, #5eac56 0%, #3c873c 100%) center / cover no-repeat !important;
+  border-radius: 0 40px 50px 0;
+  box-shadow: -2px -2px 10px rgba(0,0,0,0.25) inset, 2px 2px 10px rgba(0,0,0,0.5) inset;
+  margin-right: 0.5em;
+  text-align: left;
+}
+
+[data-skin-part="actions"] .panel__heading h4 {
+  font-size: 0;
+}
+
+[data-skin-part="actions"] .panel__heading h4::after {
+  content: "💬 start";
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: bold;
+  padding-right: 1.2rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.47);
+  white-space: nowrap;
+}
+
+[data-skin-part="blog-preview"] .panel__heading h4::before {
+  content: "📝 Notepad - ";
+}
+
+[data-skin-part="bio"] .panel__heading h4::before,
+[data-skin-part="friends"] .panel__heading h4::before,
+[data-skin-part="wall"] .panel__heading h4::before {
+  content: "💻 ";
+}
+</style>

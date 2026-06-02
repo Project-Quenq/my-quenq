@@ -1,0 +1,40 @@
+{
+  "name": "my-quenq",
+  "version": "1.0.0",
+  "license": "GPL-3.0-only",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.1.3",
+  "engines": {
+    "node": ">=24.0.0",
+    "pnpm": ">=11.0.0"
+  },
+  "scripts": {
+    "dev": "tsx watch --env-file=.env src/index.tsx",
+    "start": "node --env-file=.env dist/index.js",
+    "clean": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\"",
+    "assets:brand": "tsx src/scripts/generateBrandAssets.ts",
+    "assets:brand:clean": "tsx src/scripts/generateBrandAssets.ts --clean",
+    "build": "pnpm clean && tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "db:init": "tsx --env-file=.env src/server/db/init.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "2.0.3",
+    "@node-rs/argon2": "2.0.2",
+    "better-sqlite3": "12.10.0",
+    "countries-and-timezones": "^3.9.0",
+    "hono": "4.12.19",
+    "lucide-static": "1.16.0",
+    "sanitize-html": "2.17.4",
+    "sharp": "0.34.5",
+    "svg-captcha": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "7.6.13",
+    "@types/node": "24.12.4",
+    "@types/sanitize-html": "2.16.1",
+    "tsx": "4.22.2",
+    "typescript": "6.0.3"
+  }
+}

@@ -1,0 +1,108 @@
+<!--
+Original SpaceHey layout credit:
+p0libius
+https://layouts.spacehey.com/layout?id=1430
+-->
+
+<style>
+[data-skin-page] {
+  --skin-palette-accent: #00ff00;
+  --skin-palette-accent-text: #000000;
+  --skin-palette-backdrop: #000000;
+  --skin-palette-chrome: #000000;
+  --skin-palette-chrome-text: #00ff00;
+  --skin-palette-link: #00ff00;
+  --skin-palette-link-hover: #ffffff;
+  --skin-palette-muted: #00aa00;
+  --skin-palette-page: #000000;
+  --skin-palette-page-text: #00ff00;
+  --skin-palette-surface: #000000;
+  --skin-palette-surface-text: #00ff00;
+  background-color: #000;
+  background-image:
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.28) 50%),
+    radial-gradient(circle at center, rgba(0,255,0,0.08), transparent 62%);
+  background-size: 100% 2px, cover;
+}
+
+[data-skin-part="shell"],
+[data-skin-root],
+[data-skin-root] * {
+  font-family: "Courier New", Courier, monospace;
+}
+
+[data-skin-part="shell"],
+[data-skin-root] {
+  color: #00ff00;
+}
+
+[data-skin-root] img,
+[data-skin-root] .profile-placeholder {
+  filter: sepia(100%) hue-rotate(45deg) saturate(5);
+}
+
+[data-skin-part="navigation"],
+[data-skin-part="navigation-top"],
+[data-skin-part="navigation-links"],
+[data-skin-part="footer"],
+[data-skin-root] .panel,
+[data-skin-part="notice"],
+[data-skin-part="url"],
+[data-skin-part="actions"],
+[data-skin-part="about"],
+[data-skin-part="vibe"],
+[data-skin-part="links"],
+[data-skin-part="interests"] {
+  background: #000 !important;
+  border: 2px dotted #00ff00 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: #00ff00 !important;
+}
+
+[data-skin-part="navigation-links"],
+[data-skin-root] .panel__heading,
+[data-skin-part="url"],
+[data-skin-part="notice"] {
+  border-style: solid !important;
+}
+
+[data-skin-root] .panel__heading,
+[data-skin-root] .panel__body,
+[data-skin-part="interests"] td,
+[data-skin-part="wall"] .post-card,
+[data-skin-part="wall"] .composer {
+  background: #000 !important;
+  color: #00ff00 !important;
+}
+
+[data-skin-root] a {
+  color: #00ff00 !important;
+  text-decoration: underline !important;
+}
+
+[data-skin-root] a:hover {
+  background: #00ff00;
+  color: #000 !important;
+}
+
+[data-skin-part="name"] {
+  color: #00ff00;
+  font-size: 2em;
+}
+
+[data-skin-part="photo"] img,
+[data-skin-part="photo"] .profile-placeholder {
+  border: 1px solid #00ff00;
+  border-radius: 0;
+}
+
+[data-skin-part="actions"] .profile-actions__cell {
+  background: #000;
+  border-color: #00ff00;
+}
+
+[data-skin-part="actions"] .profile-action {
+  color: #00ff00;
+}
+</style>

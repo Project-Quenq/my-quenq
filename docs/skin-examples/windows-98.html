@@ -1,0 +1,232 @@
+<!--
+Original SpaceHey layout credit:
+Angel Is Pretty. Odd.
+https://layouts.spacehey.com/layout?id=4188
+-->
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+[data-skin-page] {
+  --skin-palette-accent: #0000ff;
+  --skin-palette-accent-text: #ffffff;
+  --skin-palette-backdrop: #007f7e;
+  --skin-palette-chrome: #0000ff;
+  --skin-palette-chrome-text: #ffffff;
+  --skin-palette-link: #000000;
+  --skin-palette-link-hover: #0000ff;
+  --skin-palette-muted: #111111;
+  --skin-palette-page: transparent;
+  --skin-palette-page-text: #000000;
+  --skin-palette-surface: #cfccc2;
+  --skin-palette-surface-text: #000000;
+  background: #007f7e !important;
+  background-image: none !important;
+  font-size: 17px;
+  min-height: 100vh;
+}
+
+[data-skin-part="shell"],
+[data-skin-root],
+[data-skin-root] * {
+  font-family: "Libre Franklin", Arial, sans-serif;
+}
+
+[data-skin-part="shell"],
+[data-skin-part="content"] {
+  background: #007f7e !important;
+}
+
+[data-skin-part="shell"] {
+  border-color: #007f7e !important;
+}
+
+[data-skin-part="content"] .page-frame,
+[data-skin-part="content"] .page-heading,
+[data-skin-part="content"] .page-heading__title {
+  background: transparent !important;
+  color: #000;
+}
+
+[data-skin-root] p,
+[data-skin-root] a {
+  color: #000;
+  font-weight: 500;
+}
+
+[data-skin-root]::-webkit-scrollbar {
+  width: 20px;
+}
+
+[data-skin-root]::-webkit-scrollbar-track {
+  background: #dcdedf;
+}
+
+[data-skin-root]::-webkit-scrollbar-thumb {
+  background: #bec7c9;
+  border: 2px outset;
+}
+
+[data-skin-root]::-webkit-scrollbar-thumb:hover {
+  background: #b5bdbf;
+}
+
+[data-skin-part="navigation"]::before {
+  background-image: url("https://i.imgur.com/CKX2NUO.png"), linear-gradient(to right, #0c1058, #adcbe1);
+  background-position: right center;
+  background-repeat: no-repeat;
+  color: white;
+  content: "my.quenq.com - Microsoft Internet Explorer";
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+  padding: 2px 66px 3px 6px;
+  text-align: left;
+}
+
+[data-skin-part="navigation"],
+[data-skin-part="footer"],
+[data-skin-root] .panel,
+[data-skin-part="notice"],
+[data-skin-part="about"],
+[data-skin-part="vibe"],
+[data-skin-part="url"],
+[data-skin-part="links"],
+[data-skin-part="interests"] {
+  background: #cfccc2 !important;
+  border-color: #fff #000 #000 #fff !important;
+  border-radius: 0 !important;
+  border-style: outset !important;
+  border-width: 2px !important;
+  box-shadow: none !important;
+}
+
+[data-skin-part="navigation"] {
+  margin: 10px !important;
+  padding: 0 !important;
+}
+
+[data-skin-part="navigation-top"] {
+  background: transparent !important;
+  color: transparent !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+[data-skin-part="brand"],
+[data-skin-part="search"],
+[data-skin-part="account"] {
+  display: none !important;
+}
+
+[data-skin-part="navigation-links"] {
+  background: #cfccc2 !important;
+  border: 0 !important;
+  border-top: 2px groove #fff !important;
+  color: #000;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-start !important;
+  padding: 0 0 3px !important;
+}
+
+[data-skin-part="navigation-links"] a {
+  color: #000 !important;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 7px;
+}
+
+[data-skin-root] .panel__heading,
+[data-skin-part="vibe"]::before {
+  background-image: url("https://i.imgur.com/CKX2NUO.png"), linear-gradient(to right, #0c1058, #adcbe1) !important;
+  background-position: right center;
+  background-repeat: no-repeat;
+  color: #fff !important;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+[data-skin-part="identity"] {
+  align-items: stretch;
+  gap: 0;
+  justify-items: stretch;
+}
+
+[data-skin-part="name"] {
+  background-image: url("https://i.imgur.com/CKX2NUO.png"), linear-gradient(to right, #0c1058, #adcbe1) !important;
+  background-position: right center;
+  background-repeat: no-repeat;
+  border-color: #fff #000 #000 #fff;
+  border-style: outset outset none outset;
+  border-width: 2px;
+  color: #fff !important;
+  font-size: 12px !important;
+  font-weight: 600;
+  margin: 0;
+  padding: 2px 66px 3px 5px;
+  text-align: left;
+  width: 100%;
+}
+
+[data-skin-part="about"] {
+  border-style: groove outset outset outset !important;
+  font-family: "Times New Roman", Times, serif;
+  min-height: 178px;
+}
+
+[data-skin-part="details"] p {
+  background: #cfccc2;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+[data-skin-part="vibe"]::before {
+  content: "Mood";
+  display: block;
+  margin: 1px;
+  padding-left: 5px;
+}
+
+[data-skin-root] .panel__body,
+[data-skin-part="wall"] .post-card,
+[data-skin-part="wall"] .composer,
+[data-skin-part="interests"] td {
+  background: #cfccc2 !important;
+  color: #000 !important;
+  font-family: "Times New Roman", Times, serif;
+}
+
+[data-skin-root] .panel__heading {
+  border-bottom-style: groove;
+  margin: 1px;
+  padding: 0 6px;
+  text-align: left;
+}
+
+[data-skin-part="notice"] {
+  font-family: "Times New Roman", Times, serif;
+}
+
+[data-skin-part="photo"] img,
+[data-skin-part="photo"] .profile-placeholder {
+  border-color: #fff #000 #000 #fff;
+  border-style: groove outset outset outset;
+  border-width: 2px;
+  border-radius: 0;
+}
+
+[data-skin-part="actions"] .profile-actions__cell {
+  background: #cfccc2;
+  border-color: #fff #000 #000 #fff;
+}
+
+[data-skin-part="actions"] .profile-action {
+  color: #000;
+}
+</style>
