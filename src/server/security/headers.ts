@@ -11,10 +11,11 @@ const frameSources = [
 
 const contentSecurityPolicy = [
   "default-src 'self'",
-  "script-src 'self'",
+  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
   "script-src-attr 'none'",
   "img-src 'self' data: https:",
   "media-src 'self'",
+  "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' data: https://fonts.gstatic.com",
   `frame-src ${frameSources.join(" ")}`,
