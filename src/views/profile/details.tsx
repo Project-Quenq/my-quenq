@@ -1,5 +1,5 @@
 import { defaultInterestNames, type UserProfile } from "../../models.js";
-import { hasSocialLinks, socialLinkPlatforms } from "../../socialLinks.js";
+import { hasSocialLinks, socialLinkPlatforms, type SocialLinkPlatformConfig } from "../../socialLinks.js";
 import { Panel } from "../../ui/panels.js";
 import { SocialLinkIcon } from "../../ui/socialLinks.js";
 import { profileSkinPart } from "../../skins/rendering.js";
@@ -15,7 +15,9 @@ export function ProfileSocialLinks({ profile }: { profile: UserProfile }) {
             const value = profile.socialLinks[platform.id];
             if (!value) return null;
 
-            const href = platform.baseUrl ? `${platform.baseUrl}${value}` : value;
+            const config = platform as SocialLinkPlatformConfig;
+            
+            const href = config.baseUrl ? `${config.baseUrl}${value}` : value;
             const displayValue = platform.id === "website" 
               ? value.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "") 
               : `@${value}`;
@@ -24,7 +26,7 @@ export function ProfileSocialLinks({ profile }: { profile: UserProfile }) {
               <tr>
                 <td>
                   <p style="display: flex; align-items: center; gap: 8px;">
-                    <SocialLinkIcon platform={platform} />
+                    <SocialLinkIcon platform={config} />
                     <span>{platform.label}</span>
                   </p>
                 </td>
