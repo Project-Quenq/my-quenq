@@ -23,14 +23,14 @@ export function SignUpPage(props: {
           
           <div id="blocked-message" style="display: none; flex-direction: column; text-align: center; background: var(--color-danger-soft); border-color: var(--color-danger); color: var(--color-danger-text); padding: 20px; border-radius: var(--radius-panel);" class="welcome">
              <p style="margin: 0 0 10px 0;"><strong>Registration is not available in your region yet.</strong></p>
-             <p style="margin: 0;">We are currently limiting signups to specific regions as we grow. Stay tuned! You can still access our Arcade and Apps without an account.</p>
+             <p style="margin: 0;">We are currently limiting my quenq registrations to specific regions as we expand. You can still access our full collection of classic games, simulators, and apps on <a href="https://quenq.com" target="_blank">Quenq.com</a> without an account.</p>
           </div>
 
           <div id="signup-form-container" style="display: contents;">
             {props.blocked ? (
               <div class="welcome" style="flex-direction: column; text-align: center; background: var(--color-danger-soft); border-color: var(--color-danger); color: var(--color-danger-text); padding: 20px; border-radius: var(--radius-panel);">
                 <p style="margin: 0 0 10px 0;"><strong>Registration is not available in your region yet.</strong></p>
-                <p style="margin: 0;">We are currently limiting signups to specific regions as we grow. Stay tuned! You can still access our Arcade and Apps without an account.</p>
+                <p style="margin: 0;">We are currently limiting my quenq registrations to specific regions as we expand. You can still access our full collection of classic games, simulators, and apps on <a href="https://quenq.com" target="_blank">Quenq.com</a> without an account.</p>
               </div>
             ) : (
               <>
