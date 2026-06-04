@@ -56,6 +56,7 @@
   color: var(--color-text);
   display: -webkit-box;
   line-height: var(--line-height-body);
+  max-height: calc(3 * var(--line-height-body) * 1em);
   min-width: 0;
   overflow: hidden;
   overflow-wrap: anywhere;
