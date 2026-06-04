@@ -115,7 +115,7 @@ export function GroupPage(props: GroupPageProps) {
         <PeopleBox
           title="Members"
           people={props.members}
-          prefix={<p><b>{props.members.length} {props.members.length === 1 ? "member" : "members"}.</b></p>}
+          prefix={<p><b>{props.group.memberCount} {props.group.memberCount === 1 ? "member" : "members"}.</b></p>}
         />
       </PageFrame>
     </Layout>
