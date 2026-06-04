@@ -24,8 +24,10 @@
     "@node-rs/argon2": "2.0.2",
     "better-sqlite3": "12.10.0",
     "countries-and-timezones": "^3.9.0",
+    "dotenv": "^8.2.0",
     "hono": "4.12.19",
     "lucide-static": "1.16.0",
+    "node-fetch": "^3.3.2",
     "sanitize-html": "2.17.4",
     "sharp": "0.34.5",
     "svg-captcha": "^1.4.0"

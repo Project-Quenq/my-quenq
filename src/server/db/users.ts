@@ -194,7 +194,7 @@ export function newestUsers(viewer: CurrentUser | null = null, limit = limits.ne
   return personCardRows(
     `FROM users u
       JOIN profiles p ON p.user_id = u.id
-      WHERE ${visible.sql}
+      WHERE ${visible.sql} AND p.pfp <> 'default'
       ORDER BY u.created_at DESC LIMIT ?`,
     ...visible.params,
     limit
