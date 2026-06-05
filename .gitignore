@@ -1,6 +1,8 @@
 .DS_Store
 *.log
 *.tsbuildinfo
+.env
+.env.*
 !.env.example
 deploy/hetzner/production.env
 coverage/
@@ -17,4 +19,3 @@ data/
 *.sqlite-*
 *.sqlite3
 *.sqlite3-*
-config.bat
